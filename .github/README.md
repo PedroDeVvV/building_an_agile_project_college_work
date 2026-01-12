@@ -1,28 +1,38 @@
-# CINETEC🍿
+## CINETEC 🍿 – Sistema de Gerenciamento Ágil
 
-Um projeto desenvolvido para aprimorar as habilidades em Node.js, React.js e MySQL. Foram utilizadas somente API's de criação própria. Consiste em um tipo de "cinema", onde o usuário pode cadastrar atores, diretores, filmes e gêneros. Um ótimo projeto para treinar a criação de rotas no backend e também estudar o fluxo de uma aplicação por completa.
+# Sobre o Projeto
+O Cinetec é um sistema de gerenciamento desenvolvido para a TechFlow Solutions. O projeto simula um cenário real de engenharia de software para uma startup de logística que necessita monitorar fluxos de trabalho e desempenho de equipe em tempo real.   
 
-## Stack utilizada
+Este repositório faz parte da avaliação da disciplina de Engenharia de Software da UniFECAF.   
 
-**Front-end:** React, Bootstrap
+# Escopo e Funcionalidades
+- A aplicação consiste em um CRUD completo para gestão de tarefas (representadas aqui pelo cadastro de filmes, atores e diretores):   
+- Autenticação: Sistema de Login e Cadastro de usuários.   
+- Gestão de Conteúdo: Create, Read, Update e Delete de Atores e Diretores.   
+- Visualização: Dashboard principal com listagem de itens cadastrados.
 
-**Back-end:** Node.js, Express.js
+# 🛠 Stack Utilizada
+Front-end: React, Bootstrap.   
+Back-end: Node.js, Express.js.   
+Banco de Dados: MySQL.
 
-**Database:** MySQL
 
-## Telas da aplicação
+# Testes: Jest para validação de entradas e lógica.   
 
-### Login
-![preview](./img/c1.png)
+# Metodologia Ágil e Gestão
+Adotamos o Kanban como metodologia principal para garantir a transparência do fluxo de trabalho.   
 
-### Cadastro
-![preview](./img/c2.png)
+# Quadro Kanban
+Localizado na aba Projects do GitHub, contendo as colunas: A Fazer, Em Progresso e Concluído.   
 
-### Cadastro de Atores
-![preview](./img/c3.png)
+# Gestão de Mudanças 
+Durante o desenvolvimento, houve uma alteração de escopo para incluir a funcionalidade de login. Essa mudança foi documentada e priorizada no Kanban para refletir as necessidades do cliente.   
 
-### Cadastro de Diretores
-![preview](./img/c4.png)
+# Controle de Qualidade (CI/CD)
+Para garantir a confiabilidade do software, implementei um pipeline de Integração Contínua (CI) via GitHub Actions.   
 
-### Tela principal
-![preview](./img/c5.png)
+# Testes Automatizados: 
+O pipeline executa testes unitários a cada push ou pull request na branch main.   
+
+# Validação: 
+O workflow garante que novas alterações não quebrem as funcionalidades de CRUD e login já existentes.

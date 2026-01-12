@@ -6,7 +6,6 @@ const routes = express.Router();
 routes.get('/', async (request, response) => {
   try {
     const results = await db.findActor();
-
     if (results.length === 0) {
       response.status(204).end();
     } else {
@@ -22,7 +21,7 @@ routes.post("/", async (request, response) => {
 
   await db.createActor(nome, sexo, dtNasc);
 
-  response.status(200).send({ message: "Ator salvo com sucesso" });
+  response.status(201).send({ message: "Ator salvo com sucesso" });
 });
 
 routes.put("/", async (request, response) => {
@@ -39,7 +38,7 @@ routes.delete("/:idActor", async (req, res) => {
   try {
     const { idActor } = req.params;
     await db.deleteActor(idActor);
-    res.status(200).send({ message: "Dados excluídos com sucesso" });
+    res.status(204)
   } catch (err) {
     res.status(500).send({ message: `Erro na requisição: ${err}` });
   }
