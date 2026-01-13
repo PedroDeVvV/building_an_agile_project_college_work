@@ -26,7 +26,7 @@ Adotamos o Kanban como metodologia principal para garantir a transparência do f
 Localizado na aba Projects do GitHub, contendo as colunas: A Fazer, Em Progresso e Concluído.   
 
 # Gestão de Mudanças 
-Durante o desenvolvimento, houve uma alteração de escopo para incluir a funcionalidade de login. Essa mudança foi documentada e priorizada no Kanban para refletir as necessidades do cliente.   
+Durante o desenvolvimento, identificamos que a segurança dos dados era um risco crítico para a startup de logística. Por isso, houve uma alteração de escopo para priorizar a Criptografia de Senhas. Além disso, para melhorar a usabilidade imediata, antecipamos a Tela de Atualização de Atores, permitindo correções rápidas em dados legados. Essa mudança foi refletida no Kanban com a readequação da coluna 'Em Progresso'.
 
 # Controle de Qualidade (CI/CD)
 Para garantir a confiabilidade do software, implementei um pipeline de Integração Contínua (CI) via GitHub Actions.   
