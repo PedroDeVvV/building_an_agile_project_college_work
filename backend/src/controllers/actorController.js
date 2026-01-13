@@ -3,7 +3,7 @@ import db from "../services/actorService.js";
 
 const routes = express.Router();
 
-routes.get('/', async (request, response) => {
+routes.get("/", async (request, response) => {
   try {
     const results = await db.findActor();
     if (results.length === 0) {
@@ -38,7 +38,7 @@ routes.delete("/:idActor", async (req, res) => {
   try {
     const { idActor } = req.params;
     await db.deleteActor(idActor);
-    res.status(204)
+    res.status(204).send();
   } catch (err) {
     res.status(500).send({ message: `Erro na requisição: ${err}` });
   }

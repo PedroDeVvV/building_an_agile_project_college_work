@@ -65,7 +65,7 @@ describe("POST /ator", () => {
   });
 });
 
-describe("DELETE /ator/:id", () => {
+describe("DELETE /ator", () => {
   test("Deve retornar 204 em caso de usuário excluído", async () => {
     db.deleteActor.mockResolvedValue(undefined);
     const response = await request(app).delete(`/ator/10`);
