@@ -5,6 +5,7 @@ const routes = express.Router();
 
 routes.get("/", async (request, response) => {
   try {
+    
     const results = await db.findActor();
     if (results.length === 0) {
       response.status(204).end();

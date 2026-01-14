@@ -41,7 +41,7 @@ const Login = () => {
       sessionStorage.setItem("jwt", data.token);
       navigate("/");
     } catch (err) {
-      toast("Erro", {
+      toast(`Erro: ${err.response.data.message}`, {
         position: "top-right",
         autoClose: 5000,
         hideProgressBar: false,
